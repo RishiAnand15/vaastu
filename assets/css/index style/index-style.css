@@ -1,0 +1,533 @@
+#nav-container {
+	position: relative;
+	width: 100%;
+	height: 70px;
+	background-color: #ffffff;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	box-shadow: 0px 10px 8px -8px rgba(8, 8, 8, 0.568);
+}
+
+.link {
+	padding: 0 20px;
+	height: 100%;
+	border-bottom: 2px solid rgb(255, 255, 255);
+	border-right: 2px solid rgb(214, 214, 214);
+	transition: border 0.5s;
+}
+
+.link:last-child {
+	border-right: 2px solid rgb(255, 255, 255);
+}
+
+.link:hover {
+	border-bottom: 2px solid #1e88e5;
+}
+
+.link > a {
+	font-size: 1rem;
+	letter-spacing: 1.5px;
+	font-family: sans-serif;
+	font-weight: 400;
+	color: #0d47a1;
+	padding: unset;
+}
+
+.link > a:hover {
+	color: #2196f3;
+}
+
+.link span {
+	display: none;
+}
+
+.nav__mobile-v-brand,
+.nav__brand,
+#nav__phone-view {
+	display: none;
+}
+
+/* HERO STYLES */
+
+.hero {
+	width: 100%;
+	height: 540px;
+	padding: 0.1px;
+	position: relative;
+	background-color: black;
+	z-index: 1;
+}
+
+.hero::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url(../../../media/crausal-img/img-two.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -1;
+	opacity: 0.4;
+}
+
+.hero__content {
+	margin: 10% 15% 0 15%;
+	color: white;
+}
+.hero__greeting {
+	font-size: 2rem;
+	letter-spacing: 0.5px;
+	color: rgb(241, 241, 241);
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.hero__brand-name {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 5rem;
+	color: white;
+}
+
+.hero__brand-name > span {
+	font-family: "Josefin Sans", sans-serif;
+	color: rgb(252, 220, 220);
+}
+
+.hero__desc {
+	font-size: 1.02rem;
+	letter-spacing: 0.4px;
+	font-family: "Nunito", sans-serif;
+	background-color: grey;
+	padding: 18px 15px;
+	font-weight: 500;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+
+.hero__cta {
+	margin: 20px 0;
+}
+
+.hero__social-links {
+	width: 200px;
+	height: 80px;
+	margin-left: 15%;
+	justify-content: space-evenly;
+	background-color: rgb(243, 243, 243);
+	opacity: 0.8;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.hero__link {
+	transform: scale(1.4);
+}
+
+.hero__link:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	color: red;
+}
+
+.fa-facebook-official {
+	color: rgb(11, 75, 252);
+	font-size: 2rem;
+}
+
+.fa-whatsapp {
+	color: green;
+}
+
+/* OFFER STYLES */
+
+.offer {
+	width: 90%;
+	height: 480px;
+	margin: auto;
+	padding: 0.1px;
+	position: relative;
+	background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+}
+
+.offer__style {
+	position: absolute;
+	height: 100%;
+	width: 350px;
+	background-color: rgb(0, 0, 0);
+	left: 0;
+}
+
+.offer__img {
+	width: 100%;
+	height: 100%;
+	opacity: 0.25;
+	object-fit: cover;
+}
+
+.offer__festive-logo {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	right: 10px;
+	bottom: 5px;
+	opacity: 0.8;
+}
+
+.offer__festive {
+	font-size: 3rem;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.offer__heading {
+	text-align: center;
+	margin-top: 10px;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 5.2rem;
+	color: rgb(255, 255, 255);
+	z-index: 1;
+}
+
+.offer__heading > span {
+	color: rgb(255, 255, 255);
+	font-family: inherit;
+}
+
+.offer__content {
+	margin-top: 10px;
+	flex-direction: column;
+}
+
+.offer__desc {
+	width: 50%;
+	font-size: 1.2rem;
+	color: rgb(255, 255, 255);
+}
+
+.offer--btn {
+	background-color: #6a1b9a;
+	color: white;
+}
+
+.offer--btn:hover {
+	background-color: #8e24aa;
+	color: black;
+	cursor: pointer;
+}
+
+/* PROJECTS STYLES */
+
+.projects {
+	width: 100%;
+}
+
+.project__heading {
+	font-family: "Josefin Sans", sans-serif;
+	color: rgb(78, 78, 78);
+	text-align: center;
+	font-size: 3rem;
+	margin: 50px 0;
+}
+
+.project__contents {
+	justify-content: space-evenly;
+}
+
+.project__content {
+	width: 340px;
+	height: 210px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	box-shadow: 0px 10px 10px -10px rgb(90, 90, 90);
+	transition: box-shadow 0.3s;
+}
+
+.project__content:hover {
+	box-shadow: 0px -10px 10px -10px rgb(197, 197, 197);
+}
+
+.project__content::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	opacity: 0.5;
+	z-index: -1;
+	transition: opacity 0.5s;
+}
+
+.project__content:hover::after {
+	opacity: 0.7;
+}
+
+.project__bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.project__c-info {
+	line-height: 3;
+	color: white;
+}
+
+.project__c-h-light {
+	font-size: 1rem;
+	background-color: red;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 5px 12px;
+	border-radius: 7px;
+	display: inline;
+}
+
+.prject__c-name {
+	font-size: 1.4rem;
+}
+
+/* SPECIFICATION STYLES */
+
+.features {
+	width: 100%;
+	height: auto;
+	min-height: 800px;
+	background-color: rgb(0, 0, 0);
+	position: relative;
+	z-index: 1;
+}
+
+.features::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(../../../media/project-bg/home-int-2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 0.9;
+	z-index: -1;
+}
+
+.features__titile {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 3.5rem;
+	color: #6a1b9a;
+
+	background-color: white;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	margin: -40px 0 0 0px;
+	transform: translateX(-50%);
+}
+
+.features__contents {
+	width: 100%;
+	height: 90%;
+	margin: 0px auto;
+	padding: 50px;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.features__contents::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+.feature__content {
+	color: white;
+	letter-spacing: 1.2px;
+	margin-bottom: 5px;
+}
+
+.feature__content-d {
+	width: 300px;
+	height: 150px;
+	text-align: center;
+	padding: 15px;
+	border: 1px solid rgb(7, 7, 7);
+	color: rgb(241, 241, 241);
+	margin: 0;
+	position: relative;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.feature__content-d::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+	z-index: -1;
+}
+
+.feature__content-d:hover{
+    transform: scale(0.95);
+    /* opacity: 1; */
+}
+
+.feature__content-icon {
+	padding-right: 10px;
+	color: rgb(255, 255, 255);
+}
+
+/* AMINITIES STYLES */
+.aminities {
+	width: 100%;
+}
+
+.aminities__title {
+	text-align: center;
+	margin: 30px 0 0px 0;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 3.5rem;
+	color: #6a1b9a;
+}
+
+.aminities__dsec {
+	text-align: center;
+	font-size: 1.5rem;
+	color: rgb(56, 56, 56);
+	margin-bottom: 30px;
+}
+
+.ami__list-container {
+	width: 90%;
+	height: 90%;
+	margin: 15px auto;
+	justify-content: space-around;
+}
+
+.ami__right-box,
+.ami__left-box {
+	width: 48%;
+	height: 100%;
+	margin: auto;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: unset;
+}
+
+.ami__left-box {
+	align-items: flex-start;
+}
+
+.ami__features-lst {
+	width: 500px;
+	height: 120px;
+	margin: 10px 0;
+    border-radius: 15px;
+	background-color: #1976d2;
+	overflow: hidden;
+	justify-content: space-between;
+	box-shadow: 0px 10px 7px -10px rgb(8, 8, 8);
+}
+
+.ami__feature-title {
+	width: 200px;
+	font-size: 1.2rem;
+	margin: 10px;
+	color: white;
+}
+
+.ami__icon {
+	width: 120px;
+	height: 120px;
+	border-radius: 15px;
+	background-color: rgb(252, 252, 252);
+	object-fit: cover;
+	transition: all 0.5s;
+}
+
+/* ABOUT US STYLES */
+.about-us {
+	width: 100%;
+	height: 270px;
+	background-color: #004274;
+	justify-content: space-around;
+	align-items: baseline;
+	padding: 50px;
+}
+
+.about {
+	width: 45%;
+	padding: 10px;
+}
+
+.about-us-title {
+	font-size: 1.25rem;
+	color: white;
+}
+
+.about-us-desc {
+	font-size: 0.9rem;
+	color: rgb(212, 212, 212);
+}
+
+.a-external-link-square {
+	color: white;
+}
+
+.project-info {
+	width: 20%;
+}
+
+.project-info-title {
+	font-size: 1.25rem;
+
+	color: white;
+}
+
+.project-status {
+	color: white;
+	font-size: 0.9rem;
+	display: block;
+}
+
+.contact-us {
+	width: 30%;
+	color: rgb(231, 231, 231);
+}
+
+.contact-us__title {
+	color: white;
+	font-size: 1.25rem;
+}
+
+.contact-us__address,
+contact-us__email,
+.contact-us__ph-num {
+	font-size: 0.9rem;
+}
+
+.a-icon {
+	padding-right: 5px;
+}

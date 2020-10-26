@@ -1,0 +1,56 @@
+@media (max-width: 900px) {
+    #nav-container {
+        position: relative;
+    }
+
+    .nav__brand {
+        display: none;
+    }
+
+    #nav__phone-view {
+        width: 15%;
+        height: 55px;
+        background-color: #212121;
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+
+    .nav__mobile-v-brand {
+        position: absolute;
+        font-size: 1.5rem;
+        top: 22px;
+        left: 40px;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1.3px;
+    }
+
+    .links {
+        height: 400px;
+        background-color: #424242;
+        padding: 90px 40px 0 40px;
+    }
+
+    .link {
+        padding: 15px 0 2px 5px;
+
+        border-bottom: 2px solid rgb(150, 150, 150);
+        color: white;
+    }
+
+    .link > a {
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+
+    .link-arrow {
+        float: right;
+        padding-right: 7px;
+        color: rgb(194, 194, 194);
+    }
+}
